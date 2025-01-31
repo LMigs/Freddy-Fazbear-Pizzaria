@@ -20,42 +20,63 @@
             text-shadow: 2px 2px red;
         }
 
+        a {
+            color: white;
+            text-shadow: 2px 2px red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         header, main, footer {
             padding: 10px;
             margin: 10px;
             border: 1px solid white;
-            border-collapse: collapse;
         }
 
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav a{
+            padding: 0px 2px;
         }
 
         main {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            align-self: center;
-            width: 75%;
+            width: 100%;
+            max-width: 75%;
+            height: 500px;
             margin: 0 auto;
+            padding: 10px;
         }
-
 
         .image-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            max-width: 30%;
+            height: 100%;
         }
 
         .image-container img {
-            max-width: 100%;
-            height: auto;
+            height: 50%;
+            width: 100%;
+            object-fit: cover; 
             border-radius: 8px;
+            padding: 5px;
         }
 
         .main-image {
-            max-width: 65%;
+            max-width: 70%;
+            height: 100%;
             border-radius: 8px;
+            padding: 10px;
         }
 
         footer {
@@ -66,12 +87,17 @@
 <body>
     <header>
         <h1>Freddy Fazbear Pizzaria</h1>
+        <nav>
+            <a href="#">Cardápio</a>
+            <a href="#">Promoções</a>
+            <a href="#">Montar pizza</a>
+        </nav>
     </header>
     <main>
-        <img class="main-image" src="images\pizza1.jpg" alt="Pizza de calabreza">
+        <img class="main-image" src="images/pizza1.jpg" alt="Pizza de calabresa">
         <div class="image-container">
-            <img src="images\pizza1.jpg" alt="Pizza de calabreza">
-            <img src="images\pizza2.jpg" alt="Pizza de sei lá">
+            <img src="images/pizza1.jpg" alt="Pizza de calabresa">
+            <img src="images/pizza2.jpg" alt="Pizza de sei lá">
         </div>
     </main>
     <footer>
