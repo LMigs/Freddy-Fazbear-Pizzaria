@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy's Fazbear Pizzaria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            text-shadow: 2px 2px red;
+        }
+
+        header, main, footer {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: center;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .main-image {
+            max-width: 65%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Freddy Fazbear Pizzaria</h1>
+    </header>
+    <main>
+        <img class="main-image" src="images\pizza1.jpg" alt="Pizza de calabreza">
+        <div class="image-container">
+            <img src="images\pizza1.jpg" alt="Pizza de calabreza">
+            <img src="images\pizza2.jpg" alt="Pizza de sei lá">
+        </div>
+    </main>
+    <footer>
+        <h3>&copy; 2025 Freddy Fazbear Pizzaria</h3>
+    </footer>
+</body>
+</html>
