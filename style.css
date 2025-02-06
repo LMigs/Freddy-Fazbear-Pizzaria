@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+a {
+    color: white;
+    text-shadow: 2px 2px red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, main, footer {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 0px 2px;
+}
+
+main {
+    width: 75%;
+    height: 500px;
+    margin: 0 auto;
+}

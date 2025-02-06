@@ -4,68 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freddy's Fazbear Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-            color: white;
-            text-shadow: 2px 2px red;
-        }
-
-        a {
-            color: white;
-            text-shadow: 2px 2px red;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        header, main, footer {
-            padding: 10px;
-            margin: 10px;
-            border: 1px solid white;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        nav a{
-            padding: 0px 2px;
-        }
-
         main {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            width: 100%;
-            max-width: 75%;
-            height: 500px;
-            margin: 0 auto;
-            padding: 10px;
         }
 
         .image-container {
             display: flex;
             flex-direction: column;
-            max-width: 30%;
+            max-width: 50%;
             height: 100%;
         }
 
         .image-container img {
-            height: 50%;
+            height: 100%;
             width: 100%;
             object-fit: cover; 
             border-radius: 8px;
@@ -82,11 +37,11 @@
 </head>
 <body>
     <header>
-        <h1>Freddy Fazbear Pizzaria</h1>
+        <a href="index.html"><h1>Freddy Fazbear Pizzaria</h1></a>
         <nav>
             <a href="#">Cardápio</a>
             <a href="#">Promoções</a>
-            <a href="#">Montar pizza</a>
+            <a href="pages/monte_sua_pizza.html">Montar pizza</a>
         </nav>
     </header>
     <main>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy's Fazbear Pizzaria</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        fieldset {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>Freddy Fazbear Pizzaria</h1></a>
+        <nav>
+            <a href="#">Cardápio</a>
+            <a href="#">Promoções</a>
+            <a href="../pages/monte_sua_pizza.html">Montar pizza</a>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Tamanho da Pizza</legend>
+                <label for="tamanho">Escolha o Tamanho:</label><br>
+                <input type="radio" id="pequeno" name="tamanho" value="pequeno" required>
+                <label for="pequeno">Pequeno (4 fatias)</label><br>
+                <input type="radio" id="grande" name="tamanho" value="grande">
+                <label for="grande">Grande (8 fatias)</label><br><br>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Quantidade de Sabores</legend>
+                <label for="sabores">Escolha a quantidade de sabores:</label><br>
+                <select id="sabores" name="sabores" required>
+                    <option value="1">1 Sabor</option>
+                    <option value="2">2 Sabores</option>
+                    <option value="3">3 Sabores</option>
+                </select><br><br>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Escolha os Sabores</legend>
+                <label for="sabor1">Primeiro Sabor:</label><br>
+                <select id="sabor1" name="sabor1" required>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango">Frango</option>
+                    <option value="mussarela">Mussarela</option>
+                </select><br><br>
+    
+                <label for="sabor2">Segundo Sabor (opcional, se escolher 2 ou 3 sabores):</label><br>
+                <select id="sabor2" name="sabor2">
+                    <option value="">-- Selecione --</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango">Frango</option>
+                    <option value="mussarela">Mussarela</option>
+                </select><br><br>
+    
+                <label for="sabor3">Terceiro Sabor (opcional, se escolher 3 sabores):</label><br>
+                <select id="sabor3" name="sabor3">
+                    <option value="">-- Selecione --</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango">Frango</option>
+                    <option value="mussarela">Mussarela</option>
+                </select><br><br>
+            </fieldset>
+    
+            <input type="submit" value="Enviar Pedido">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+    <footer>
+        <small>
+            <p>Bem-vindo ao Freddy Fazbear’s Pizzeria, o lugar mais divertido para crianças e famílias, onde as melhores pizzas e entretenimento se encontram!
+ Somos uma pizzaria única, famosa por nossas deliciosas pizzas e pelo show incrível protagonizado pelos nossos animatrônicos: Freddy, Bonnie, Chica e Foxy.
+            </p>
+            <p>Freddy Fazbear’s, Pizzaria 101 Rua das Sombras, Distrito 12, Cidade Sombria, SP, 98765-432</p>
+            <p>contato@freddyfazbearspizzaria.com.br</p>
+            &copy; 2025 Freddy Fazbear Pizzaria
+        </small>
+    </footer>
+</body>
+</html>
