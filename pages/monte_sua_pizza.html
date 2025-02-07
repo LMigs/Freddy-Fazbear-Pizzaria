@@ -6,10 +6,42 @@
     <title>Freddy's Fazbear Pizzaria</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+        }
         fieldset {
             border-top: none;
             border-left: none;
             border-right: none;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        label, select, input[type="submit"], input[type="reset"] {
+            display: block;
+            margin-top: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            margin-top: 15px;
+            padding: 5px;
+            width: 100%;
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 110%;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: darkred;
         }
     </style>
 </head>
@@ -26,47 +58,47 @@
         <form action="#" method="post">
             <fieldset>
                 <legend>Tamanho da Pizza</legend>
-                <label for="tamanho">Escolha o Tamanho:</label><br>
-                <input type="radio" id="pequeno" name="tamanho" value="pequeno" required>
-                <label for="pequeno">Pequeno (4 fatias)</label><br>
+                <label for="tamanho">Escolha o Tamanho:</label>
+                <input type="radio" id="pequeno" name="tamanho" value="pequeno" checked>
+                <label for="pequeno">Pequeno (4 fatias)</label>
                 <input type="radio" id="grande" name="tamanho" value="grande">
-                <label for="grande">Grande (8 fatias)</label><br><br>
+                <label for="grande">Grande (8 fatias)</label>
             </fieldset>
     
             <fieldset>
                 <legend>Quantidade de Sabores</legend>
-                <label for="sabores">Escolha a quantidade de sabores:</label><br>
+                <label for="sabores">Escolha a quantidade de sabores:</label>
                 <select id="sabores" name="sabores" required>
                     <option value="1">1 Sabor</option>
                     <option value="2">2 Sabores</option>
                     <option value="3">3 Sabores</option>
-                </select><br><br>
+                </select>
             </fieldset>
     
             <fieldset>
                 <legend>Escolha os Sabores</legend>
-                <label for="sabor1">Primeiro Sabor:</label><br>
+                <label for="sabor1">Primeiro Sabor:</label>
                 <select id="sabor1" name="sabor1" required>
                     <option value="calabresa">Calabresa</option>
                     <option value="frango">Frango</option>
                     <option value="mussarela">Mussarela</option>
-                </select><br><br>
+                </select>
     
-                <label for="sabor2">Segundo Sabor (opcional, se escolher 2 ou 3 sabores):</label><br>
+                <label for="sabor2">Segundo Sabor (opcional, se escolher 2 ou 3 sabores):</label>
                 <select id="sabor2" name="sabor2">
                     <option value="">-- Selecione --</option>
                     <option value="calabresa">Calabresa</option>
                     <option value="frango">Frango</option>
                     <option value="mussarela">Mussarela</option>
-                </select><br><br>
+                </select>
     
-                <label for="sabor3">Terceiro Sabor (opcional, se escolher 3 sabores):</label><br>
+                <label for="sabor3">Terceiro Sabor (opcional, se escolher 3 sabores):</label>
                 <select id="sabor3" name="sabor3">
                     <option value="">-- Selecione --</option>
                     <option value="calabresa">Calabresa</option>
                     <option value="frango">Frango</option>
                     <option value="mussarela">Mussarela</option>
-                </select><br><br>
+                </select>
             </fieldset>
     
             <input type="submit" value="Enviar Pedido">
@@ -76,7 +108,7 @@
     <footer>
         <small>
             <p>Bem-vindo ao Freddy Fazbear’s Pizzeria, o lugar mais divertido para crianças e famílias, onde as melhores pizzas e entretenimento se encontram!
- Somos uma pizzaria única, famosa por nossas deliciosas pizzas e pelo show incrível protagonizado pelos nossos animatrônicos: Freddy, Bonnie, Chica e Foxy.
+Somos uma pizzaria única, famosa por nossas deliciosas pizzas e pelo show incrível protagonizado pelos nossos animatrônicos: Freddy, Bonnie, Chica e Foxy.
             </p>
             <p>Freddy Fazbear’s, Pizzaria 101 Rua das Sombras, Distrito 12, Cidade Sombria, SP, 98765-432</p>
             <p>contato@freddyfazbearspizzaria.com.br</p>

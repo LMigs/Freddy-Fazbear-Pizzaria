@@ -8,30 +8,16 @@
     <style>
         main {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
         }
-
+        .big-image {
+            width: 70%;
+            height: 100%;
+        }
         .image-container {
             display: flex;
             flex-direction: column;
-            max-width: 50%;
-            height: 100%;
-        }
-
-        .image-container img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover; 
-            border-radius: 8px;
-            padding: 5px;
-        }
-
-        .main-image {
-            max-width: 70%;
-            height: 100%;
-            border-radius: 8px;
-            padding: 10px;
+            justify-content: space-between;
+            width: 30%;
         }
     </style>
 </head>
@@ -45,7 +31,7 @@
         </nav>
     </header>
     <main>
-        <img class="main-image" src="images/pizza1.jpg" alt="Pizza de calabresa">
+        <img class="big-image" src="images/pizza1.jpg" alt="Pizza de calabresa">
         <div class="image-container">
             <img src="images/pizza1.jpg" alt="Pizza de calabresa">
             <img src="images/pizza2.jpg" alt="Pizza de sei lá">
