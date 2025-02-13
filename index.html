@@ -6,18 +6,26 @@
     <title>Freddy's Fazbear Pizzaria</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main {
-            display: flex;
-        }
         .big-image {
-            width: 70%;
+            width: 100%;
             height: 100%;
         }
-        .image-container {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .item {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            width: 30%;
+            align-items: center;
+            text-align: center;
+            width: auto;
+        }
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -25,16 +33,23 @@
     <header>
         <a href="index.html"><h1>Freddy Fazbear Pizzaria</h1></a>
         <nav>
-            <a href="#">Cardápio</a>
-            <a href="#">Promoções</a>
+            <a href="pages/cardapio.html">Cardápio</a>
+            <a href="pages/promocoes.html">Promoções</a>
             <a href="pages/monte_sua_pizza.html">Montar pizza</a>
         </nav>
     </header>
     <main>
         <img class="big-image" src="images/animatronicos.jpg" alt="animatronicos">
-        <div class="image-container">
-            <img src="images/pizza1.jpg" alt="Pizza de calabresa">
-            <img src="images/pizza2.jpg" alt="Pizza de 4 queijos">
+        <div class="row">
+            <div class="item">
+                <img src="images/pizza_calabresa.jpg" alt="Pizza de calabresa">
+            </div>
+            <div class="item">
+                <img src="images/pizza_frango_catupiry.jpg" alt="Pizza de frango catupiry">
+            </div>
+            <div class="item">
+                <img src="images/pizza_queijo_mussarela.jpg" alt="Pizza de queijo mussarela">
+            </div>
         </div>
     </main>
     <footer>
