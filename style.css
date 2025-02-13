@@ -33,7 +33,11 @@ main {
 footer {
     bottom: auto;
     align-items: center;
+
     justify-content: space-between;
+}
+footer p {
+    padding: 0 0 4px;
 }
 a {
     color: white;
